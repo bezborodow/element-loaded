@@ -1,4 +1,4 @@
-function elementLoaded(selector, target = document) {
+export default function elementLoaded(selector, target = document) {
   return new Promise((resolve, reject) => {
     const firstPass = target.querySelector(selector);
     if (firstPass) {

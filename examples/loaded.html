@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
 <title>elementLoaded</title>
-<script src="../index.js"></script>
 <style>
 .border {
     border: 0.2em dashed black;
 }
 </style>
-<script>
+<script type="module" src="../index.js"></script>
+<script type="module">
+
+import elementLoaded from '../index.js';
 
 elementLoaded('#list')
     .then((element) => {
