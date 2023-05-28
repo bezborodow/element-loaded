@@ -58,7 +58,7 @@ is fired, if no matching element has been found, then the promise will reject
 and the observer will
 [disconnect](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/disconnect).
 
-Alternaives are:
+Alternatives are:
 
   * To simply handle an event for an element that does not exist yet, consider using
     [event delegation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events).
