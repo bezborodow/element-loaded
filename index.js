@@ -23,14 +23,17 @@ function elementLoaded(selector) {
         }
       }
     });
+
     document.addEventListener('DOMContentLoaded', () => {
       reject('DOM finished loading, not found.');
       observer.disconnect();
     });
+
     if (document.readyState != 'loading') {
       reject('DOM already loaded, not found.');
       return;
     }
+
     observer.observe(target, { subtree: true, childList: true });
   });
 }
