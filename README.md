@@ -15,11 +15,14 @@ elementLoaded(selector)
 ## Syntax
 ```
 elementLoaded(selector)
+elementLoaded(selector, target)
 ```
 
 ### Parameters
 
 **`selector`**: A [selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) to match against.
+
+**`target`** *(Optional)*: An element to query and observe for matches. By default, this is the entire document.
 
 ### Return Value
 

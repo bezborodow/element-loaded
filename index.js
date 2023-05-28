@@ -1,7 +1,5 @@
-function elementLoaded(selector) {
+function elementLoaded(selector, target = document) {
   return new Promise((resolve, reject) => {
-    const target = document;
-
     const firstPass = target.querySelector(selector);
     if (firstPass) {
       resolve(firstPass);
