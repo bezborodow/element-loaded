@@ -7,15 +7,13 @@ export default function elementLoaded(selector, target = document) {
     }
 
     const observer = new MutationObserver((mutations) => {
-      for (const mutation of mutations) {
-        if (mutation.type == 'childList') {
-          for (const addedNode of mutation.addedNodes) {
-            if (addedNode instanceof HTMLElement) {
-              if (addedNode.matches(selector)) {
-                observer.disconnect();
-                resolve(addedNode);
-                return;
-              }
+      for (const { addedNodes } of mutations) {
+        for (const addedNode of addedNodes) {
+          if (addedNode instanceof HTMLElement) {
+            if (addedNode.matches(selector)) {
+              observer.disconnect();
+              resolve(addedNode);
+              return;
             }
           }
         }
