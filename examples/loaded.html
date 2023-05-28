@@ -13,7 +13,10 @@
 </style>
 <script>
 
-elementLoaded();
+elementLoaded('#list')
+    .then((element) => {
+        element.classList.add('border');
+    });
 
 </script>
 </head>
