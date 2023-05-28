@@ -68,3 +68,7 @@ Alternatives are:
   * For more complicated cases, use `MutationObserver` directly.
   * For building [custom elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements),
     consider [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components).
+
+## Examples
+
+See [examples](https://bezborodow.github.io/element-loaded/examples/).
