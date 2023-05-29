@@ -69,6 +69,11 @@ Alternatives are:
   * For building [custom elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements),
     consider [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components).
 
+
+See also:
+
+  * [`elementLoadedById()`](https://github.com/bezborodow/element-loaded-by-id)
+
 ## Examples
 
 See [examples](https://bezborodow.github.io/element-loaded/examples/).
