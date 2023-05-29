@@ -16,7 +16,7 @@ export default function elementLoaded(selector, target = document) {
 
             if (element) {
               observer.disconnect();
-              resolve(addedNode);
+              resolve(element);
               return;
             }
           }
