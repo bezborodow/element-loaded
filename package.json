@@ -1,7 +1,7 @@
 {
   "name": "element-loaded",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Detect when an element matching a selector is loaded into the DOM using Promise and MutationObserver.",
   "main": "index.js",
   "directories": {
