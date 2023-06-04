@@ -10,9 +10,8 @@ export default function elementLoaded(selector, target = document) {
       for (const { addedNodes } of mutations) {
         for (const addedNode of addedNodes) {
           if (addedNode instanceof HTMLElement) {
-            const element = (addedNode.matches(selector) && addedNode)
-              || addedNode.querySelector(selector)
-              || addedNode.closest(selector);
+            const element = addedNode.closest(selector)
+              || addedNode.querySelector(selector);
 
             if (element) {
               observer.disconnect();
