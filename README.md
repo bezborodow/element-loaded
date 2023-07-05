@@ -1,11 +1,18 @@
 # `elementLoaded()`
+
 Detect when an [element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
 matching a [selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 is loaded into the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).
 
+This will only match the first occurrence.
+
 ## Synopsis
 
+Install with `npm i element-loaded`
+
 ```javascript
+import elementLoaded from 'element-loaded';
+
 elementLoaded(selector)
     .then((element) => {
         // ...
